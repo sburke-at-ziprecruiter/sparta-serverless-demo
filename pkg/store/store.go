@@ -1,12 +1,13 @@
 package store
 
 import (
-	"MyGo/dynamo_db/pkg/config"
-	"MyGo/dynamo_db/pkg/customer"
-	"MyGo/dynamo_db/pkg/movie"
-	"MyGo/dynamo_db/pkg/table"
 	"encoding/json"
 	"fmt"
+
+	"github.com/sburke-at-ziprecruiter/sparta-serverless-demo/pkg/config"
+	"github.com/sburke-at-ziprecruiter/sparta-serverless-demo/pkg/customer"
+	"github.com/sburke-at-ziprecruiter/sparta-serverless-demo/pkg/movie"
+	"github.com/sburke-at-ziprecruiter/sparta-serverless-demo/pkg/table"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/dynamodb"

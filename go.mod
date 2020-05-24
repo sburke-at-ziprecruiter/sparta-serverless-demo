@@ -1,4 +1,4 @@
-module MyGo/dynamo_db
+module github.com/sburke-at-ziprecruiter/sparta-serverless-demo
 
 go 1.14
 

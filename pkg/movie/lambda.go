@@ -9,6 +9,7 @@ import (
 	"net/http"
 	"strconv"
 
+	"github.com/sburke-at-ziprecruiter/sparta-serverless-demo/pkg/config"
 	"github.com/sirupsen/logrus"
 
 	sparta "github.com/mweagle/Sparta"
@@ -61,7 +62,7 @@ func getMovie(ctx context.Context,
 func LambdaFunctions(api *sparta.API) []*sparta.LambdaAWSInfo {
 	var lambdaFunctions []*sparta.LambdaAWSInfo
 	lambdaFn, _ := sparta.NewAWSLambda(
-		sparta.LambdaName(getMovie),
+		config.ShortLambdaName(getMovie),
 		getMovie,
 		"Sparta-Lambda-DynamoDB",
 	)

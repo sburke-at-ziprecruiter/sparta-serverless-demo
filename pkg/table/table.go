@@ -1,8 +1,9 @@
 package table
 
 import (
-	"MyGo/dynamo_db/pkg/config"
 	"fmt"
+
+	"github.com/sburke-at-ziprecruiter/sparta-serverless-demo/pkg/config"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/dynamodb"

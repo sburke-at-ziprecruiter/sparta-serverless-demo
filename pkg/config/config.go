@@ -6,10 +6,12 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
+	"strings"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/dynamodb"
+	sparta "github.com/mweagle/Sparta"
 	"github.com/sirupsen/logrus"
 )
 
@@ -95,4 +97,11 @@ func ArchiveHook(context map[string]interface{},
 		return fmt.Errorf("Writing zip/greeting - %w", err)
 	}
 	return nil
+}
+
+// ShortLambdaName strips off host/user from the sparta.LambdaName.
+// This helps to avoid exceeding the 64-char limit on Lambda names.
+func ShortLambdaName(handlerSymbol interface{}) string {
+	name := sparta.LambdaName(handlerSymbol)
+	return strings.Join(strings.Split(name, "/")[2:], "/")
 }

@@ -1,12 +1,12 @@
 package main
 
 import (
-	"MyGo/dynamo_db/pkg/customer"
-	"MyGo/dynamo_db/pkg/movie"
-	"MyGo/dynamo_db/pkg/store"
+	"fmt"
 	"os"
 
-	"fmt"
+	"github.com/sburke-at-ziprecruiter/sparta-serverless-demo/pkg/customer"
+	"github.com/sburke-at-ziprecruiter/sparta-serverless-demo/pkg/movie"
+	"github.com/sburke-at-ziprecruiter/sparta-serverless-demo/pkg/store"
 )
 
 func main() {

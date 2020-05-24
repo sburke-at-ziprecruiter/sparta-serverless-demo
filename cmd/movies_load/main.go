@@ -1,13 +1,13 @@
 package main
 
 import (
-	"MyGo/dynamo_db/pkg/movie"
 	"compress/gzip"
 	"encoding/json"
-	"io/ioutil"
-
 	"fmt"
+	"io/ioutil"
 	"os"
+
+	"github.com/sburke-at-ziprecruiter/sparta-serverless-demo/pkg/movie"
 )
 
 // readMovies reads Movies from a gzipped JSON via stdin.

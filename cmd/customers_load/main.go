@@ -1,11 +1,11 @@
 package main
 
 import (
-	"MyGo/dynamo_db/pkg/customer"
-	"MyGo/dynamo_db/pkg/store"
-
 	"fmt"
 	"os"
+
+	"github.com/sburke-at-ziprecruiter/sparta-serverless-demo/pkg/customer"
+	"github.com/sburke-at-ziprecruiter/sparta-serverless-demo/pkg/store"
 )
 
 var customers = []customer.Customer{

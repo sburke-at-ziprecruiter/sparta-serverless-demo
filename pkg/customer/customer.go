@@ -1,10 +1,11 @@
 package customer
 
 import (
-	"MyGo/dynamo_db/pkg/table"
 	"encoding/json"
 	"fmt"
 	"time"
+
+	"github.com/sburke-at-ziprecruiter/sparta-serverless-demo/pkg/table"
 )
 
 type Contact struct {

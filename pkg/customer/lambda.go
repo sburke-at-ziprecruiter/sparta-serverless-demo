@@ -8,6 +8,7 @@ import (
 	"fmt"
 	"net/http"
 
+	"github.com/sburke-at-ziprecruiter/sparta-serverless-demo/pkg/config"
 	"github.com/sirupsen/logrus"
 
 	sparta "github.com/mweagle/Sparta"
@@ -54,7 +55,7 @@ func LambdaFunctions(api *sparta.API) []*sparta.LambdaAWSInfo {
 	var lambdaFunctions []*sparta.LambdaAWSInfo
 	paramName := "phone"
 	lambdaFn, _ := sparta.NewAWSLambda(
-		sparta.LambdaName(getCustomer),
+		config.ShortLambdaName(getCustomer),
 		getCustomer,
 		"Sparta-Lambda-DynamoDB",
 	)

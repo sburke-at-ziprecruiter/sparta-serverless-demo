@@ -1,5 +1,8 @@
-nohup.out
+*~
+.sparta
 config.json
+graph.html
+nohup.out
 
 # Binaries for programs and plugins
 *.exe

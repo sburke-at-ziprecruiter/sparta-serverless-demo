@@ -1,11 +1,12 @@
 package movie
 
 import (
-	"MyGo/dynamo_db/pkg/config"
-	"MyGo/dynamo_db/pkg/table"
 	"encoding/json"
 	"fmt"
 	"time"
+
+	"github.com/sburke-at-ziprecruiter/sparta-serverless-demo/pkg/config"
+	"github.com/sburke-at-ziprecruiter/sparta-serverless-demo/pkg/table"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/dynamodb"

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"MyGo/dynamo_db/pkg/movie"
-	"MyGo/dynamo_db/pkg/store"
+	"github.com/sburke-at-ziprecruiter/sparta-serverless-demo/pkg/movie"
+	"github.com/sburke-at-ziprecruiter/sparta-serverless-demo/pkg/store"
 
 	"fmt"
 	"os"

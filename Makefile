@@ -124,16 +124,13 @@ stop:
 # Provision the CloudFormation stack for the REST API
 
 describe: config.json
-	cd cmd/rest_api ; env AWS_REGION=$(REGION) CONFIG=../../config.json \
-	go run main.go --nocolor describe  --s3Bucket $(BUCKET) --out ./graph.html
+	env AWS_REGION=$(REGION) go run main.go --nocolor describe  --s3Bucket $(BUCKET) --out ./graph.html
 
 provision: config.json
-	cd cmd/rest_api ; env AWS_REGION=$(REGION) CONFIG=../../config.json \
-	go run main.go --nocolor provision --s3Bucket $(BUCKET)
+	env AWS_REGION=$(REGION) go run main.go --nocolor provision --s3Bucket $(BUCKET)
 
 delete: config.json
-	cd cmd/rest_api ; env AWS_REGION=$(REGION) CONFIG=../../config.json \
-	go run main.go --nocolor delete
+	env AWS_REGION=$(REGION) go run main.go --nocolor delete
 
 # Test the REST API
 get-customer:

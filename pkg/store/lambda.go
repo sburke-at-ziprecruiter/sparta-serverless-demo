@@ -4,11 +4,13 @@ package store
 //    https://github.com/mweagle/SpartaHTML/blob/master/main.go
 
 import (
-	"MyGo/dynamo_db/pkg/customer"
 	"context"
 	"fmt"
 	"net/http"
 	"strconv"
+
+	"github.com/sburke-at-ziprecruiter/sparta-serverless-demo/pkg/config"
+	"github.com/sburke-at-ziprecruiter/sparta-serverless-demo/pkg/customer"
 
 	"github.com/sirupsen/logrus"
 
@@ -152,7 +154,7 @@ func LambdaFunctions(api *sparta.API) []*sparta.LambdaAWSInfo {
 
 	// Lambda getStore
 	lambdaFn, lambdaErr := sparta.NewAWSLambda(
-		sparta.LambdaName(getStore),
+		config.ShortLambdaName(getStore),
 		getStore,
 		"Sparta-Lambda-DynamoDB",
 	)
@@ -177,7 +179,7 @@ func LambdaFunctions(api *sparta.API) []*sparta.LambdaAWSInfo {
 
 	// Lambda getCustomers
 	lambdaFn, lambdaErr = sparta.NewAWSLambda(
-		sparta.LambdaName(getCustomers),
+		config.ShortLambdaName(getCustomers),
 		getCustomers,
 		"Sparta-Lambda-DynamoDB",
 	)
@@ -202,7 +204,7 @@ func LambdaFunctions(api *sparta.API) []*sparta.LambdaAWSInfo {
 
 	// Lambda getMovies
 	lambdaFn, lambdaErr = sparta.NewAWSLambda(
-		sparta.LambdaName(getMovies),
+		config.ShortLambdaName(getMovies),
 		getMovies,
 		"Sparta-Lambda-DynamoDB",
 	)
