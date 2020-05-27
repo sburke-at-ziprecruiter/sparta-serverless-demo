@@ -2,8 +2,7 @@
 
 ## Overview
 
-This demonstrates a serverless REST API, backed by Lambda and DynamoDB,
-that i have written in order to familiarize myself with the Sparta framework:
+This demonstrates a serverless REST API, backed by Lambda and DynamoDB, within the Sparta framework:
 
 http://gosparta.io/
 
@@ -17,8 +16,7 @@ This demonstration uses the AWS services:
 - DynamoDB
 
 Sparta is capable of setting up a static website in S3 to provide a frontend for the REST API,
-but this demo does not show that. This is also my first Sparta application, so don't assume
-that everything in the demo is a best practice!
+but this demo does not use that feature.
 
 ## DynamoDB Schema
 
@@ -196,4 +194,8 @@ And delete the DynamoDB table via:
 
     make delete-table
 
-That's all! I hope you find this demo to be helpful.
+## Conclusions
+
+The Sparta framework makes this project easy to deploy and update.
+Sparta is well-documented, and it builds in a lot of best practices.
+I recommend it highly.
