@@ -86,15 +86,15 @@ func ArchiveHook(context map[string]interface{},
 
 	data, err := ioutil.ReadFile(configPath)
 	if err != nil {
-		return fmt.Errorf("Reading greeting - %w", err)
+		return fmt.Errorf("Reading %s - %w", configPath, err)
 	}
 	iow, err := zipWriter.Create(defaultConfigPath)
 	if err != nil {
-		return fmt.Errorf("Create zip/greeting - %w", err)
+		return fmt.Errorf("Creating %s - %w", defaultConfigPath, err)
 	}
 	_, err = iow.Write(data)
 	if err != nil {
-		return fmt.Errorf("Writing zip/greeting - %w", err)
+		return fmt.Errorf("Writing %s - %w", defaultConfigPath, err)
 	}
 	return nil
 }
