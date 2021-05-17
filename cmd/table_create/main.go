@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/sburke-at-ziprecruiter/sparta-serverless-demo/pkg/config"
-	"github.com/sburke-at-ziprecruiter/sparta-serverless-demo/pkg/table"
+	"github.com/seanpburke/sparta-serverless-demo/pkg/config"
+	"github.com/seanpburke/sparta-serverless-demo/pkg/table"
 
 	"fmt"
 	"os"

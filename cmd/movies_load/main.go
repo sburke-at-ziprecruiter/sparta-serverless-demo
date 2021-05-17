@@ -7,7 +7,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/sburke-at-ziprecruiter/sparta-serverless-demo/pkg/movie"
+	"github.com/seanpburke/sparta-serverless-demo/pkg/movie"
 )
 
 // readMovies reads Movies from a gzipped JSON via stdin.

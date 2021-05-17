@@ -9,8 +9,8 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/sburke-at-ziprecruiter/sparta-serverless-demo/pkg/config"
-	"github.com/sburke-at-ziprecruiter/sparta-serverless-demo/pkg/customer"
+	"github.com/seanpburke/sparta-serverless-demo/pkg/config"
+	"github.com/seanpburke/sparta-serverless-demo/pkg/customer"
 
 	"github.com/sirupsen/logrus"
 

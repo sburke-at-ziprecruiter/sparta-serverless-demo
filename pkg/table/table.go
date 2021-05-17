@@ -3,7 +3,7 @@ package table
 import (
 	"fmt"
 
-	"github.com/sburke-at-ziprecruiter/sparta-serverless-demo/pkg/config"
+	"github.com/seanpburke/sparta-serverless-demo/pkg/config"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/dynamodb"

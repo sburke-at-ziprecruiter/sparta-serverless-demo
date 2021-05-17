@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/sburke-at-ziprecruiter/sparta-serverless-demo/pkg/customer"
-	"github.com/sburke-at-ziprecruiter/sparta-serverless-demo/pkg/movie"
-	"github.com/sburke-at-ziprecruiter/sparta-serverless-demo/pkg/store"
+	"github.com/seanpburke/sparta-serverless-demo/pkg/customer"
+	"github.com/seanpburke/sparta-serverless-demo/pkg/movie"
+	"github.com/seanpburke/sparta-serverless-demo/pkg/store"
 )
 
 func main() {

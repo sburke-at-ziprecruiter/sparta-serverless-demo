@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/sburke-at-ziprecruiter/sparta-serverless-demo/pkg/table"
+	"github.com/seanpburke/sparta-serverless-demo/pkg/table"
 )
 
 type Contact struct {
